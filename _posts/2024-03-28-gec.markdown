@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "To Err Is Human, but Llamas Can Learn It Too"
+date:   2024-03-28 22:21:59 +00:00
+image: /images/gec.png
+categories: research
+author: "Maksym Del" 
+authors: "Agnes Luhtaru*, Taido Purason*, Martin Vainikko, <strong>Maksym Del</strong>, Mark Fishel"
+venue: "preprint"
+arXiv: https://arxiv.org/abs/2403.05493
+---
+We show how to effectively use large langauge models for artificial error generation and grammatical error correction.
