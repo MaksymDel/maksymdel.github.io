@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Translation Transformers Rediscover Inherent Data Domains"
+date:   2021-07-07 22:21:59 +00:00
+image: /images/domains.png
+categories: research
+author: "Maksym Del"
+authors: "<strong>Maksym Del</strong>*, Elizaveta Korotkova*, Mark Fishel"
+venue: "WMT"
+paper: https://www.semanticscholar.org/paper/Similarity-of-Sentence-Representations-in-LMs%3A-and-Del-Fishel/0b749f70dd8cbe22fcfa7efeb571836b195c125d
+code: https://github.com/TartuNLP/xsim
+---
+We show that translation transformers keep internal domain representaions apart.
