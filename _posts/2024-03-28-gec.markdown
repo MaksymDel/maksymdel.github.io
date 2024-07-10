@@ -7,6 +7,6 @@ categories: research
 author: "Maksym Del" 
 authors: "Agnes Luhtaru*, Taido Purason*, Martin Vainikko, <strong>Maksym Del</strong>, Mark Fishel"
 venue: "preprint"
-arXiv: https://arxiv.org/abs/2403.05493
+arxiv: https://arxiv.org/abs/2403.05493
 ---
 We show how to effectively use large langauge models for artificial error generation and grammatical error correction.
