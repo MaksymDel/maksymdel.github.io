@@ -10,6 +10,5 @@ authors: "<strong>Maksym Del</strong>, Mark Fishel"
 venue: "*SEM"
 paper: https://aclanthology.org/2023.starsem-1.28/
 code: https://github.com/MaksymDel/true-detective
-website: 
 ---
-We show that GPT-4 cannot reliablty solve short-form detective story-puzzles even when prezented with the golden chain of thought reasoning trace hinting at the correct answer. 
+We show that GPT-4 cannot reliably solve short-form detective puzzles, even when given a chain of thought reasoning trace hinting at the correct answer.
