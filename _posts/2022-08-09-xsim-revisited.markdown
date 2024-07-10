@@ -10,4 +10,4 @@ venue: "AACL"
 paper: https://aclanthology.org/2022.aacl-main.15/
 code: https://github.com/TartuNLP/xsim
 ---
-We show how to perform efficient black-box optimization of algorithm configuration from user preferences. Results include Intel RealSense stereo cameras and a robot social navigation policy.
+We demonstrate the universality of the internal cross-lingual structure across multilingual language models.
