@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "C-3MA: Tartu-Riga-Zurich Translation Systems for WMT17"
+date:   2017-07-07 22:21:59 +00:00
+image: /images/c3ma.png
+categories: research
+author: "Maksym Del" 
+authors: "Matīss Rikters, Chantal Amrhein, <strong>Maksym Del</strong>, Mark Fishel"
+venue: "WMT"
+paper: https://aclanthology.org/W17-4738/
+code: https://github.com/M4t1ss/C-3MA
+---
+We describe the neural machine translation systems of the University of Latvia, University of Zurich and University of Tartu submitted as a part of the WMT17 shared task.

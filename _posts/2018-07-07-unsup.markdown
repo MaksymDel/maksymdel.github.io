@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Phrase-based Unsupervised Machine Translation with Compositional Phrase Embeddings"
+date:   2018-07-07 22:21:59 +00:00
+image: /images/unsup-mt.png
+categories: research
+author: "Maksym Del" 
+authors: "<strong>Maksym Del</strong>, Andre Tattar, Mark Fishel"
+venue: "WMT"
+paper: https://aclanthology.org/W18-6407/
+---
+We propose compositional phrase embeddings for unsupervised machiene translation. 
