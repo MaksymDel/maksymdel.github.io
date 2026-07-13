@@ -1,0 +1,96 @@
+- title: "How Uncertainty Estimation Scales with Sampling in Reasoning Models"
+  year: 2026
+  image: /images/reasoning-confidence.png
+  image_alt: "Sampling-efficiency curves for confidence estimation across reasoning models and benchmarks"
+  authors: "<strong>Maksym Del</strong>, Markus Kängsepp, Marharyta Domnich, Ardi Tampuu, Lisa Yankovskaya, Meelis Kull, Mark Fishel"
+  venue: "Preprint"
+  arxiv: https://arxiv.org/abs/2603.19118
+  description: "We show that 2 to 4 reasoning traces capture most of the benefit of sampling for black-box confidence estimation in reasoning models. This low sampling budget offsets the high cost of reasoning traces, establishing sampling as the practical default for confidence estimation."
+
+- title: "To Err Is Human, but Llamas Can Learn It Too"
+  year: 2024
+  image: /images/gec.png
+  image_alt: "Overview of an LLM-based pipeline for artificial error generation and grammatical error correction"
+  authors: "Agnes Luhtaru*, Taido Purason*, Martin Vainikko, <strong>Maksym Del</strong>, Mark Fishel"
+  venue: "Findings of EMNLP"
+  arxiv: https://arxiv.org/abs/2403.05493
+  paper: https://aclanthology.org/2024.findings-emnlp.727/
+  note: "* Equal contribution."
+  description: "We show how to use large language models effectively for artificial error generation and grammatical error correction."
+
+- title: "Multilingual and Multi-Domain Representational Patterns Across Transformer-Based Models"
+  year: 2024
+  authors: "<strong>Maksym Del</strong>"
+  venue: "PhD thesis, University of Tartu"
+  paper: https://hdl.handle.net/10062/105563
+  description: "This thesis studies how transformer models organize multilingual and multi-domain information in their internal representations."
+
+- title: "True Detective: A Deep Abductive Reasoning Benchmark Undoable for GPT-3 and Challenging for GPT-4"
+  year: 2023
+  image: /images/true-detective.jpg
+  image_alt: "Illustration for the True Detective abductive-reasoning benchmark"
+  authors: "<strong>Maksym Del</strong>, Mark Fishel"
+  venue: "*SEM"
+  paper: https://aclanthology.org/2023.starsem-1.28/
+  code: https://github.com/MaksymDel/true-detective
+  description: "We introduce 191 short-form detective puzzles for evaluating abductive reasoning and find a 42-percentage-point accuracy gap between GPT-4 and top human solvers."
+
+- title: "Cross-lingual Similarity of Multilingual Representations Revisited"
+  year: 2022
+  image: /images/xsim-revisited.png
+  image_alt: "Layer-wise cross-lingual similarity patterns in multilingual language models"
+  authors: "<strong>Maksym Del</strong>, Mark Fishel"
+  venue: "AACL"
+  paper: https://aclanthology.org/2022.aacl-main.15/
+  code: https://github.com/TartuNLP/xsim
+  note: "Oral presentation."
+  description: "We introduce Average Neuron-Wise Correlation, reducing cross-lingual representation comparison from O(N^2) to O(N), and demonstrate consistent middle-layer interlingual structure across multilingual models."
+
+- title: "Similarity of Sentence Representations in Multilingual LMs: Resolving Conflicting Literature and a Case Study of Baltic Languages"
+  year: 2022
+  image: /images/baltic.png
+  image_alt: "Cross-lingual sentence representation similarities for Baltic and other languages"
+  authors: "<strong>Maksym Del</strong>, Mark Fishel"
+  venue: "Baltic Journal of Modern Computing"
+  paper: https://doi.org/10.22364/bjmc.2022.10.3.07
+  code: https://github.com/TartuNLP/xsim
+  description: "We reconcile conflicting findings about cross-lingual structure in multilingual language models and examine the representation of Baltic languages."
+
+- title: "Translation Transformers Rediscover Inherent Data Domains"
+  year: 2021
+  image: /images/domains.png
+  image_alt: "Visualization of domain structure in neural machine translation representations"
+  authors: "<strong>Maksym Del</strong>*, Elizaveta Korotkova*, Mark Fishel"
+  venue: "WMT"
+  paper: https://aclanthology.org/2021.wmt-1.65/
+  code: https://github.com/TartuNLP/xsim
+  note: "* Equal contribution."
+  description: "We show that translation transformers separate inherent data domains internally and use this structure for unsupervised adaptation, improving in-browser English-to-Estonian translation by up to 1.6 BLEU."
+
+- title: "Grammatical Error Correction and Style Transfer via Zero-shot Monolingual Translation"
+  year: 2019
+  image: /images/style-transfer.png
+  image_alt: "Zero-shot monolingual translation setup for grammatical error correction and style transfer"
+  authors: "Elizaveta Korotkova, Agnes Luhtaru, <strong>Maksym Del</strong>, Krista Liin, Daiga Deksne, Mark Fishel"
+  venue: "Preprint"
+  arxiv: https://arxiv.org/abs/1903.11283
+  description: "We perform grammatical error correction and style transfer with a single multilingual translation model, without task-specific training."
+
+- title: "Phrase-based Unsupervised Machine Translation with Compositional Phrase Embeddings"
+  year: 2018
+  image: /images/unsup-mt.png
+  image_alt: "Phrase-based unsupervised machine translation with compositional phrase embeddings"
+  authors: "<strong>Maksym Del</strong>, Andre Tattar, Mark Fishel"
+  venue: "WMT"
+  paper: https://aclanthology.org/W18-6407/
+  description: "We propose compositional phrase embeddings for phrase-based unsupervised machine translation."
+
+- title: "C-3MA: Tartu-Riga-Zurich Translation Systems for WMT17"
+  year: 2017
+  image: /images/c3ma.png
+  image_alt: "Architecture and results of the C-3MA neural machine translation systems"
+  authors: "Matīss Rikters, Chantal Amrhein, <strong>Maksym Del</strong>, Mark Fishel"
+  venue: "WMT"
+  paper: https://aclanthology.org/W17-4738/
+  code: https://github.com/M4t1ss/C-3MA
+  description: "We describe the University of Latvia, University of Zurich, and University of Tartu neural machine translation systems submitted to the WMT17 shared task."

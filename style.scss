@@ -1,105 +1,271 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
-//@import "reset";
-//@import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-a {
-  color: #1772d0;
-  text-decoration: none;
+:root {
+  --text: #20252b;
+  --muted: #58636f;
+  --link: #1261a6;
+  --link-hover: #7a3d00;
+  --rule: #dfe5ea;
+  --soft: #f4f7f9;
 }
 
-a:focus,
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+}
+
 a:hover {
-  color: #f09228;
-  text-decoration: none;
+  color: var(--link-hover);
+  text-decoration: underline;
 }
 
-body,
-td,
-th,
-tr,
-p,
-a {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
+a:focus-visible {
+  border-radius: 2px;
+  outline: 3px solid #f2b84b;
+  outline-offset: 3px;
 }
 
-strong {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  font-display: auto;
+.site-shell {
+  width: min(100% - 40px, 920px);
+  margin: 0 auto;
+  padding: 48px 0 56px;
 }
 
-h2 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
-  font-display: auto;
-  font-weight: normal;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(240px, 2fr);
+  gap: 48px;
+  align-items: center;
+  padding-bottom: 44px;
 }
 
-h3 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.1rem, 5vw, 2.75rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.hero__bio {
+  max-width: 610px;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.hero__portrait {
+  justify-self: end;
+  width: min(100%, 300px);
+}
+
+.hero__portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(28, 39, 49, 0.08);
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 16px;
+  align-items: baseline;
+  margin-top: 20px;
+  font-size: 0.94rem;
+}
+
+.profile-links__email {
+  color: var(--muted);
+}
+
+.research > h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 1.55rem;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.publication:last-child {
+  border-bottom: 0;
+}
+
+.publication__media {
+  display: grid;
+  min-height: 124px;
+  place-items: center;
+}
+
+.publication__media img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.publication__placeholder {
+  display: grid;
+  width: 150px;
+  height: 112px;
+  place-items: center;
+  border: 1px solid #cad7e1;
+  border-radius: 6px;
+  background: var(--soft);
+  color: #597083;
+  font-size: 1.1rem;
   font-weight: 700;
-  font-display: auto;
-  padding: 0px;
-  margin: 0px;
-  display:inline; 
+  letter-spacing: 0.12em;
 }
 
-h1 {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: normal;
-  font-display: auto;
-  text-align: center;
-  padding: 0px;
-  margin-block-start: 14px;
-  margin-block-end: 14px;
-  margin-left: 0px;
-  margin-right: 0px;
-
+.publication h3 {
+  margin: 0 0 3px;
+  font-size: 1rem;
+  line-height: 1.35;
 }
 
-.one {
-  width: 160px;
-  height: 160px;
-  position: relative;
+.publication p {
+  margin: 0;
 }
 
-.two {
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.publication__authors,
+.publication__venue,
+.publication__links,
+.publication__note {
+  font-size: 0.94rem;
 }
 
-.fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+.publication__venue {
+  color: var(--muted);
 }
 
-span.highlight {
-  background-color: #ffffd0;
+.publication__links {
+  display: flex;
+  gap: 7px;
+  margin-top: 3px !important;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-//@import "highlights";
-//@import "svg-icons";
+.publication__note {
+  margin-top: 7px !important;
+  color: var(--muted);
+}
+
+.publication__description {
+  margin-top: 11px !important;
+}
+
+@media (max-width: 700px) {
+  .site-shell {
+    width: min(100% - 28px, 920px);
+    padding-top: 30px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding-bottom: 38px;
+  }
+
+  .hero__portrait {
+    justify-self: start;
+    width: min(64vw, 260px);
+  }
+
+  .publication {
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 17px;
+    align-items: start;
+    padding: 24px 0;
+  }
+
+  .publication__media {
+    min-height: 84px;
+  }
+
+  .publication__media img {
+    max-height: 110px;
+  }
+
+  .publication__placeholder {
+    width: 100px;
+    height: 78px;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    font-size: 15px;
+  }
+
+  .publication {
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .publication__media img {
+    max-height: 92px;
+  }
+
+  .publication__placeholder {
+    width: 84px;
+    height: 68px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .publication {
+    grid-template-columns: 1fr;
+  }
+
+  .publication__media {
+    min-height: 0;
+    justify-items: start;
+  }
+
+  .publication__media img {
+    width: min(56%, 150px);
+    max-height: 110px;
+  }
+
+  .publication__placeholder {
+    width: 100px;
+    height: 78px;
+  }
+}
