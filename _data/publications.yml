@@ -35,7 +35,7 @@
   venue: "*SEM"
   paper: https://aclanthology.org/2023.starsem-1.28/
   code: https://github.com/MaksymDel/true-detective
-  description: "We introduce a 191-puzzle benchmark exposing a major limitation in abductive reasoning: GPT-4 scored 38% at publication, versus over 80% for top human solvers."
+  description: "We introduce a 191-puzzle benchmark exposing a major limitation in abductive reasoning: then-frontier GPT-4 scored 38%, versus over 80% for top human solvers."
 
 - title: "Cross-lingual Similarity of Multilingual Representations Revisited"
   year: 2022
